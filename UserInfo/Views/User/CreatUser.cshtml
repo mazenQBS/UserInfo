@@ -1,0 +1,33 @@
+﻿@model User
+
+
+<form asp-action="CreatUser" method="post" role="form">
+    
+    
+    <div>
+        <label asp-for="Name"></label>
+        <input asp-for="Name" />
+    </div>
+    
+    <div>
+        <label asp-for="Birthday"></label>
+        <input asp-for="Birthday" />
+    </div>
+    <div>
+        <label asp-for="Gender"></label>
+        <select asp-for="Gender">
+            <option>male</option>
+            <option>female</option>
+
+        </select>
+    </div>
+    <div>
+        <label asp-for="Image"></label>
+        <input asp-for="Image" type="file" />
+    </div>  
+    
+    <div>
+        <input type="submit"/>
+    </div>
+
+</form>
